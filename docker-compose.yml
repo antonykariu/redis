@@ -1,13 +1,13 @@
-# services:
-#   redis:
-#    image: redis:latest
-#    command: >
-#     --requirepass ${REDISPASS} 
-#    ports:
-#      - "6379:6379"
-#    env_file:
-#      .env
+services:
+  redis:
+   image: redis:latest
+   command: >
+    --requirepass ${REDISPASS} 
+   ports:
+     - "6379:6379"
+   env_file:
+     .env
 
-# networks:
-#   redisnet:
-#    driver: bridge
+networks:
+  redisnet:
+   driver: bridge
