@@ -1,4 +1,4 @@
 tasks:
   - name: redis
-    init: echo "Prebuild"
+    init: touch .env && gp env >> .env
     command: docker compose up
