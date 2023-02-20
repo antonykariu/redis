@@ -1,4 +1,0 @@
-tasks:
-  - name: Setup redis
-    init: sudo apt-get install redis
-    command: redis-cli
