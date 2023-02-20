@@ -1,3 +1,4 @@
 tasks:
   - name: redis
+    init: echo "Prebuild"
     command: docker compose up
