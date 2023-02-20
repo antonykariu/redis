@@ -1,5 +1,5 @@
 tasks:
   - name: redis
-    before: sudo apt-get install redis
+    before: sudo apt-get -y install redis 
     init: touch .env && gp env >> .env
     command: docker compose up
