@@ -1,0 +1,4 @@
+tasks:
+  - name: redis
+    init: echo "prebuild"
+    command: redis-server
