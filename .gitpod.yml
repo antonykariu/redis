@@ -1,5 +1,5 @@
 tasks:
   - name: redis
     before: sudo apt-get -y install redis 
-    init: touch .env && gp env >> .env
+    init: touch .env && gp env >> .env && npm i -g nodemon
     command: docker compose up
